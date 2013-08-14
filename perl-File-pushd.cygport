@@ -1,0 +1,14 @@
+CPAN_AUTHOR=dagolden
+inherit perl
+
+NAME="perl-File-pushd"
+VERSION=1.005
+RELEASE=1
+CATEGORY="Perl"
+SUMMARY="Perl pushd implementation"
+DESCRIPTION="File::pushd does a temporary 'chdir' that is easily and
+automatically reverted, similar to 'pushd' in some Unix command shells. It
+works by creating an object that caches the original working directory. When
+the object is destroyed, the destructor calls 'chdir' to revert to the
+original working directory. By storing the object in a lexical variable with
+a limited scope, this happens automatically at the end of the scope."
